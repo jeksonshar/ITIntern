@@ -18,7 +18,7 @@
             android:id="@+id/textMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{safeUnbox(mainViewModel.firstLaunch) ? @string/test1 : @string/test2}"
+            android:text="@{mainViewModel.firstLaunch ? @string/test1 : @string/test2}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -51,7 +51,7 @@
             app:layout_constraintTop_toBottomOf="@id/checkBox1Main" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnClearFirst2"
+            android:id="@+id/btnClearTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/clear"
@@ -59,6 +59,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/checkBox2Main" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/InputText"
+            android:text="@={mainViewModel.editTextHandle}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnClearTextView"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setSavedStateHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_saved_state_handler"
+            android:textAllCaps="false"
+            android:onClick="@{() -> mainViewModel.setEditTextHandle(editText.text.toString())}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
