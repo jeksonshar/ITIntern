@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206201602706",
+    "project_id": "internshipitcraft",
+    "storage_bucket": "internshipitcraft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206201602706:android:e890d805a98debc7031c4b",
+        "android_client_info": {
+          "package_name": "com.example.internitcraft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206201602706-9rmhoq8nvs7m7vbthcte16e3qgu102qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM41KCDHp5kCamrxVJssMIwphYaVarkMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206201602706-9rmhoq8nvs7m7vbthcte16e3qgu102qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
